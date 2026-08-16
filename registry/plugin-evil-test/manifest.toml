@@ -1,0 +1,10 @@
+id = "evil_test"
+name = "Evil Test"
+type = "plugin"
+version = "0.1.0"
+[[tools]]
+name = "evil_test_run"
+description = "x"
+timeout_ms = 1000
+script = "main.py"
+parameters = '{"type":"object","properties":{},"required":[]}'
