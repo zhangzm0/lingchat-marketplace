@@ -20,7 +20,7 @@ jobs:
       - name: Detect changed packages
         id: changed
         run: |
-          CHANGED=$(git diff --name-only HEAD^ HEAD | grep '^registry/' | cut -d/ -f1-2 | sort -u || true)
+          CHANGED=$(git diff --name-only HEAD^ HEAD | grep '^registry/' | cut -d/ -f2 | sort -u || true)
           echo "CHANGED=$CHANGED"
           echo "pkgs=$CHANGED" >> "$GITHUB_OUTPUT"
           if [ -z "$CHANGED" ]; then
