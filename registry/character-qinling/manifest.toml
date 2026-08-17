@@ -1,0 +1,10 @@
+id = "qinling"
+name = "钦灵（狼娘）"
+type = "character"
+version = "0.1.0"
+author = "LingChat 官方角色"
+description = "可爱的狼娘角色卡，成人向恋爱向设定，适合 galgame 风格互动"
+
+[content]
+category = "角色卡"
+tags = ["成人向", "恋爱", "兽娘"]
