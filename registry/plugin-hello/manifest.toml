@@ -1,0 +1,10 @@
+id = "hello"
+name = "Hello"
+type = "plugin"
+version = "0.1.0"
+[[tools]]
+name = "hello_greet"
+description = "问候测试"
+timeout_ms = 1000
+script = "main.py"
+parameters = '{"type":"object","properties":{},"required":[]}'
