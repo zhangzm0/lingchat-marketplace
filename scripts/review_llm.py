@@ -5,7 +5,7 @@
     python3 scripts/review_llm.py registry/ machine_report.json [--json-out review.json]
 
 环境变量：
-    LLM_API_KEY     必填。OpenAI 兼容 API Key（默认智谱开放平台）
+    LLM_API_KEY     必填。OpenAI 兼容 API Key（默认智谱开放平台；魔搭 ModelScope 也可用）
     LLM_BASE_URL    默认 https://open.bigmodel.cn/api/paas/v4
     LLM_MODEL       默认 glm-4.7-flash（智谱免费模型，200K 上下文）
 
@@ -101,6 +101,8 @@ def call_llm(material: str, machine_report: dict, base_url: str, api_key: str, m
         ],
         "temperature": 0.1,
         "max_tokens": 2048,
+        # 魔搭/部分厂商默认开启思考模式（输出进 reasoning_content，content 为空），显式关闭
+        "enable_thinking": False,
         "response_format": {"type": "json_object"},
     }
 
@@ -118,7 +120,13 @@ def call_llm(material: str, machine_report: dict, base_url: str, api_key: str, m
         try:
             with urllib.request.urlopen(req, timeout=180) as resp:
                 body = json.loads(resp.read().decode("utf-8"))
-            return True, body["choices"][0]["message"]["content"]
+            choices = body.get("choices") or []
+            if not choices:
+                print(f"[review_llm] 空 choices（可能思考模式被拒）: {str(body)[:200]}", file=sys.stderr)
+                return False, None
+            msg = choices[0].get("message", {})
+            text = msg.get("content") or msg.get("reasoning_content") or ""
+            return True, text
         except urllib.error.HTTPError as e:
             detail = e.read().decode("utf-8", errors="replace")
             if e.code == 429 or "1302" in detail or e.code >= 500:
