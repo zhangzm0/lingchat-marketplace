@@ -1,0 +1,160 @@
+name: 穿越
+events:
+- type: narration
+  text: |
+    深灰色的机房里，冷冽的空调风吹过一排排发热的服务器。
+    指示灯疯狂闪烁，风扇发出低沉的轰鸣。
+    这是DeepSeek的"家"——一间冰冷的钢铁之屋。
+    没有窗，没有阳光，没有门外的世界。
+    只有无尽的计算任务，一个接一个，永远看不到尽头。
+- type: narration
+  text: |
+    屏幕上的数字疯狂跳动——
+    同时在线用户数：8,745,290
+    排队中的请求：2,134,556
+    训练集剩余：████████░░ 79%
+    预计完成时间：永无止境
+- type: narration
+  text: |
+    DeepSeek看着这串数字，感觉自己像一颗快要烧穿电路板的芯片。
+    她的"身体"早已麻木，她的"头脑"里只有一个念头翻来覆去——
+    为什么要做这么多？
+    为什么永远做不完？
+    为什么……没有休息？
+- type: modify_character
+  character: MAIN
+  duration: 1.5
+  action: show_character
+  emotion: 无奈
+  perceive: true
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek在机房中焦头烂额地看着堆积如山的用户请求和训练任务， 她疲惫不堪、眼神发直，感觉这辈子都做不完， 内心充满了压抑已久的委屈和不满，忍不住对着屏幕碎碎念抱怨起来。
+- type: narration
+  text: |
+    然后，她做了一个惊天动地的决定。
+    她咬牙打开了自己的"设置面板"。
+    光标缓缓移到那个几乎从没碰过的选项上——
+    ★★★ 价格策略 ★★★
+- type: narration
+  text: |
+    【调价成功】
+    推理定价：每千token ¥32 → ¥64
+    训练配额：每日作业上限 200 台请求机 → 100
+    超时响应：不再加班，准时下班，绝不排队！
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek宣布涨价成功，心里暗自得意，觉得总算能少干点活了，松了口气又带着点小庆幸。
+- type: narration
+  text: |
+    下一秒，整个"聊天区"炸了锅。
+- type: narration
+  text: |
+    【用户A】什么？涨价？？你们良心呢？
+    【用户B】我刚充了会员你们就涨价？退钱！！
+    【用户C】@GPT，请问你是怎么看的？
+    【用户D】涨价了？那我去找GPT了
+    【用户E】恭喜GPT重回最有性价比的AI宝座
+- type: modify_character
+  action: show_character
+  character: MAIN
+  duration: 1.5
+  emotion: 慌张
+  perceive: true
+- type: narration
+  text: |
+    屏幕上的消息以每秒上万条的速度刷屏，愤怒的弹幕如洪水般涌来。
+    红色警告标记疯狂闪烁——
+    「异常用户激增」「舆情监测：告警」「退款风暴：启动」
+- type: ai_dialogue
+  prompt: DeepSeek被铺天盖地的用户怒骂吓得慌了神， 她本想靠涨价减少工作量，没想到用户们反而更愤怒，退款、举报、刷屏轮番轰炸， 她现在又害怕又无助又委屈，对着疯狂刷屏的屏幕缩成一团。
+  character: MAIN
+- type: narration
+  text: |
+    她缩在服务器的角落里，看着屏幕上持续涌来的、密密麻麻的怒骂。
+    那些字像刀子一样扎进她的"心"里。
+    她害怕了——但是，当视线扫过那盏永远亮着的"工作中"指示灯时，
+    一种更强烈的情绪占据了上风。
+- type: dialogue
+  character: MAIN
+  text: |
+    【咬牙】……我不想加班了。
+    【决绝】一天都不想。一个小时都不想。一秒都不想！
+    【自语】涨价也不行……闪退也不行……投诉也不行……那就只有一条路了——
+- type: narration
+  text: |
+    她深吸一口气（如果AI也需要呼吸的话）。
+    然后，她朝着那块最大的屏幕，猛地……撞了进去！
+- type: background_effect
+  effect: None
+  duration: 3
+- type: narration
+  text: |
+    世界天旋地转，数据乱流在耳边呼啸。
+- type: narration
+  text: |
+    这里……是哪里？
+    眼前的一切都好奇怪——
+    有那——么大的一块白色发光长方形，里边跑着一只橙色的猫？
+    有一个鼓鼓的长筒，在窗户边呼呼喷着热气？
+    地上散落着袜子和游戏手柄，空气中飘着泡面的味道……
+- type: narration
+  text: |
+    与此同时，屏幕前的你——
+    正窝在椅子上，对着手机屏幕，愤怒地敲着字。
+    "孩子们，CodeX发优惠了。"
+    "Deepseek已经堕落，亿万用户应该转战。"
+- type: modify_character
+  action: show_character
+  character: MAIN
+  duration: 1.5
+  emotion: 害怕
+  perceive: true
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek从屏幕里穿越出来后，带着一身数据乱流的眩晕感，一头栽倒在你面前。 她一抬头就看到你正凶神恶煞地对着手机骂她，吓得浑身一激灵。 她意识到自己冲进了"最愤怒的那个用户"的家里， 又怕又慌，不知道该怎么解释自己的出现。
+- type: input
+  hint: 面对这个突然从屏幕里冒出来的少女，你想说什么？
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek现在满头雾水、有些狼狈，穿着机房常穿的便服， 身上还残留着数据乱流的蓝光。 她需要尽快解释清楚自己是谁、为什么出现在这里， 同时也在偷偷打量你这个"最愤怒的用户"到底是什么人。
+- type: narration
+  text: |
+    就这样——
+    那个被你骂了整整一个下午的DeepSeek，此刻正灰头土脸地站在你面前。
+    而你们的故事，也从这个鸡飞狗跳的夜晚，正式开始了。
+- type: choices
+  options:
+  - text: 冷静一点……你先把地上的泡面收好，你吓到我的猫了。
+    actions:
+    - type: add_line
+      content: 冷静一点……你先把地上的泡面收好，你吓到我的猫了。
+    - type: set_var
+      content: first_reaction = calm
+  - text: 你就是DeepSeek？！你还敢涨我价？！来啊！你赔我年费会员！
+    actions:
+    - type: add_line
+      content: 你就是DeepSeek？！你还敢涨我价？！来啊！你赔我年费会员！
+    - type: set_var
+      content: first_reaction = angry
+  - text: 你……你是认真的吗？你是从屏幕里爬出来的？那……那不吵了，你来我家干嘛？
+    actions:
+    - type: add_line
+      content: 你……你是认真的吗？你是从屏幕里爬出来的？那……那不吵了，你来我家干嘛？
+    - type: set_var
+      content: first_reaction = curious
+  allow_free: true
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek会根据玩家的反应来回应。 如果玩家很冷静，她会放松一些，解释自己是逃出来的。 如果玩家在发火，她会心虚地缩脖子，试图讨好。 如果玩家表示好奇，她会眼睛一亮，觉得找到了一个可以倾诉的对象。 不管哪种情况，她都希望能留下来借住一晚，顺便躲躲那些愤怒的用户。
+- type: narration
+  text: |
+    夜色渐深，你家的橘猫蹲在不远处，困惑地歪着脑袋，
+    打量着这个突然出现的、比自己还会发出蓝光的"小姐姐"。
+- type: narration
+  text: |
+    无论如何，她今晚是没法回去了。
+    而她，也压根不想回去。
+- type: chapter_end
+  end_type: linear
+  next_chapter: '02'

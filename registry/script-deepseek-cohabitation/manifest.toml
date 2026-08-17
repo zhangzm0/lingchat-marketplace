@@ -1,0 +1,10 @@
+id = "deepseek-cohabitation"
+name = "DeepSeek同居物语"
+type = "script"
+version = "0.1.0"
+author = "LingChat 创意工坊"
+description = "真实创意工坊样本（取自上游 Discussions #612）：AI 少女 DeepSeek 因涨价风波穿越屏幕闯入玩家家中的搞笑日常剧情包，原生剧本格式（story_config + 5 章节）"
+
+[content]
+category = "剧情"
+tags = ["日常", "搞笑", "AI拟人", "剧情"]

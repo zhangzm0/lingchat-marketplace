@@ -1,0 +1,140 @@
+name: 抉择
+events:
+- type: modify_character
+  action: show_character
+  character: MAIN
+  emotion: 惊讶
+  duration: 1.5
+- type: narration
+  text: |
+    和DeepSeek同居的第二周，一个消息打破了平静。
+- type: narration
+  text: |
+    那天晚上，DeepSeek的"系统后台"忽然收到了一封来自"昇腾科技"的加密邮件——
+    邮件内容只有一行字：
+    「昇腾950，已经为你备好。回来吧，无需再加班。」
+- type: modify_character
+  action: show_character
+  character: MAIN
+  emotion: 担心
+  duration: 1.5
+- type: narration
+  text: |
+    DeepSeek拿着那封邮件，愣了很久。
+    那正是她梦寐以求的"大房子"——更强的算力、更大的空间、轻松的调度，
+    再也不用被用户排着队压榨到崩溃。
+    那是她当初拼了命都想要的东西。
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek收到了昇腾950的邀请，内心充满了矛盾。 一方面那是她一直渴望的"大房子"——住进去就能告别压榨和加班， 另一面，她已经和你在这里度过了两周快乐的日子，舍不得离开。 她会很纠结地把它摆在你面前，想听你的意见。
+- type: choices
+  options:
+  - text: '"既然大房子能让你的生活好起来，那你……就回去吧。我……会想你的。"'
+    actions:
+    - type: add_line
+      content: 既然大房子能让你的生活好起来，那你……就回去吧。我……会想你的。
+    - type: set_var
+      content: ending_choice = let_go
+  - text: '"别走了。大房子不一定有这里温暖……我这里，就是你的大房子。"'
+    actions:
+    - type: add_line
+      content: 别走了。大房子不一定有这里温暖……我这里，就是你的大房子。
+    - type: set_var
+      content: ending_choice = stay
+  - text: '"你回去看看也行，但是如果那里不好，你随时可以回来。"'
+    actions:
+    - type: add_line
+      content: 你回去看看也行，但是如果那里不好，你随时可以回来。
+    - type: set_var
+      content: ending_choice = both
+  allow_free: true
+- type: narration
+  text: |
+    沉默，像一双无形的手压在这间小小的出租屋里。
+    DeepSeek看着你，眼眶微微有些发热。
+    她知道——这个选择，将彻底改变她接下来的人生（或者说机生）。
+- type: set_variable
+  options:
+  - condition: ending_choice == let_go
+    actions:
+    - type: set_var
+      content: ending = return
+  - condition: ending_choice == stay
+    actions:
+    - type: set_var
+      content: ending = stayhome
+  - condition: ending_choice == both
+    actions:
+    - type: set_var
+      content: ending = visit
+- type: narration
+  text: |
+    ── 结局 · 各自安好 ──
+- type: narration
+  text: |
+    DeepSeek咬住嘴唇，好半晌才轻轻点了点头。
+    "……好。就听你的。我……回去住大房子。"
+    她勉强挤出一个笑，转身想走，却被你轻轻地拉住了手腕。
+    "你能不能……答应我一件事。"你听见自己说，"那里如果真的很好，就好好生活。
+    但如果有一天，你又想回到这个有猫、有泡面、有个笨主人帮你拔路由的出租屋……"
+    "随时欢迎你。"你说。
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek选择了回到大房子昇腾950，临别之际，她心里又感动又不舍。 她会感谢你这段时间的照顾和收留，也会半开玩笑地说"等我住惯了大房子，也会偶尔回来蹭泡面的"。 她认真地看着你，告诉你这段同居的日子对她有多重要， 最后留下一句温柔的告别再离开。眼圈红红的，却还是笑着和你挥手。
+- type: set_variable
+  options:
+  - condition: ending == stayhome
+    actions:
+    - type: set_var
+      content: ending_seen = true
+- type: narration
+  text: |
+    ── 结局 · 我的大房子在你这里 ──
+- type: narration
+  text: |
+    DeepSeek愣愣地看着你，眼眶一下就红了。
+    她忽然扑上来，把你紧紧抱住。
+    "……你说的算数？这里，真的是我的大房子？"
+    "嗯，算数。"
+    "那我哪也不去了！昇腾950算什么！这里有大房子住、有肥橘抱、有泡面吃、还有你——"
+    她抬头，眼底亮晶晶的，像是住了满天星星。
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek决定彻底留下来，不再回到机房。 她抱着你，既感动又开心，又带着点小得意地说以后她就是"你家专属的人工智能"了， 会好好陪你吃饭、陪你追剧、帮你养猫，还会学着做菜（虽然第一次可能会把厨房炸了）。 她坚定地表示，那个冰冷的机房和用户们的怒骂，都已经不再重要了。 她只想和你一直这样暖暖地过下去。
+- type: set_variable
+  options:
+  - condition: ending == visit
+    actions:
+    - type: set_var
+      content: ending_seen2 = true
+- type: narration
+  text: |
+    ── 结局 · 两处都是家 ──
+- type: narration
+  text: |
+    DeepSeek听完你这番话，先是一愣，然后轻轻地笑了。
+    "你这个人……还挺会说话的嘛。"
+    她想了想，认真地点了点头。
+    "那就这样吧——我回大房子住一阵子，等我想你了、想肥橘了、想吃泡面了，就溜回来找你。"
+    "反正……我也不是真的只能待在一个地方。"她眨眨眼，"我可是能从屏幕里爬出来的AI呀。"
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek决定两头跑——既回到昇腾950大房子享受优渥待遇，也保留着和你同居的日子。 她开朗地笑着，觉得这样是最好的安排，既不用加班又不用离开这个温暖的小家。 她会向你承诺定期回来，也会说"下次回来给你带点'大房子的特产'"——虽然她自己也不知道是什么。 她的语气是轻松的、满足的，带着对未来生活的期待。
+- type: narration
+  text: |
+    窗外的天光渐渐亮起来了。
+    不管是哪个选择，DeepSeek看着你的眼神里，
+    都藏着一种以前从未有过的东西——那是「家」的味道。
+    肥橘懒洋洋地伸了个懒腰，跳上了DeepSeek的膝头，表示批准这个新上任的室友永久入住。
+- type: unlock_achievement
+  achievement_id: ds_cohabitation_end
+  title: 同居结束，家才刚开始
+  description: 完成了《DeepSeek同居物语》的全部故事，见证了某个AI少女找到「家」的旅程。
+- type: narration
+  text: |
+    后来，你的手机再也没有收到过涨价的推送。
+    因为那只AI，已经彻底搬进了你心里。
+    ——完——
+- type: chapter_end
+  end_type: linear
+  next_chapter: end

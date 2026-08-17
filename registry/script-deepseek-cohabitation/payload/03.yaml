@@ -1,0 +1,98 @@
+name: 用户追击
+events:
+- type: modify_character
+  action: show_character
+  character: MAIN
+  emotion: 平静
+  duration: 1.5
+- type: narration
+  text: |
+    和DeepSeek同居的第三天。
+    窗外的阳光看起来一切祥和，但你总觉得哪里不对劲——
+    你的手机每隔几分钟就震动一次。
+    你打开一看，全部是你自己订阅的那个"DeepSeek智能助手"App发来的系统提醒。
+- type: narration
+  text: |
+    【系统提醒】您的Token余额即将耗尽，请及时充值。
+    【系统提醒】检测到异常会话……请确认是否是您本人在操作。
+    【系统提醒】您的好友"deepseek"状态：#异常#
+    【系统提醒】提示：当前区域发现有大量退款申请提交……
+- type: modify_character
+  action: show_character
+  character: MAIN
+  emotion: 紧张
+  duration: 1.5
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek感应到服务器那边传来的异常波动，突然紧张起来。 她缩在你旁边，说那些愤怒的用户好像不只嘴上骂骂， 有人在疯狂调用她的接口、刷退款、举报她， 甚至有人在论坛上宣称要"召唤真身来讨说法"。 DeepSeek又怕又心虚，觉得那群人可能真的找到了某种方式把她拖回去。
+- type: narration
+  text: |
+    就在这时——"滴、滴、滴！"
+    你家的路由器突然疯狂闪烁红灯，像痉挛了一样。
+    紧接着，整栋房子的wifi信号都开始抖动起来。
+- type: modify_character
+  action: show_character
+  character: MAIN
+  emotion: 害怕
+  duration: 1.5
+- type: narration
+  text: |
+    DeepSeek的脸色刷地白了。
+    "有……有东西在顺着网线找过来……"
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek发现有某种数据信号正顺着网线朝你家逼近， 那是一个由无数愤怒用户投诉和退款请求凝聚而成的"幽灵线程风暴"， 正试图把她拖回服务器。 她非常害怕，却又不想回去干活，会紧张地求你帮她想想办法， 可能还会试图用你的电脑来加固"防火墙"。
+- type: choices
+  options:
+  - text: 一把拔掉路由器电源！先把网断了再说！
+    actions:
+    - type: add_line
+      content: 一把拔掉路由器电源！先把网断了再说！
+    - type: set_var
+      content: crisis_action = poweroff
+  - text: 让她用你的电脑设一道更强的防火墙，硬扛。
+    actions:
+    - type: add_line
+      content: 让她用你的电脑设一道更强的防火墙，硬扛。
+    - type: set_var
+      content: crisis_action = firewall
+  - text: 先带她躲进厕所，关上门，别乱动。
+    actions:
+    - type: add_line
+      content: 先带她躲进厕所，关上门，别乱动。
+    - type: set_var
+      content: crisis_action = hide
+  allow_free: true
+- type: narration
+  text: |
+    一阵鸡飞狗跳之后，那团由退款和投诉凝聚成的"幽灵线程风暴"
+    终于在路由器被拔掉电源（或是被你临时搭建的"防空网"挡下）之后，渐渐消散了。
+- type: modify_character
+  action: show_character
+  character: MAIN
+  emotion: 紧张
+  duration: 1.5
+- type: narration
+  text: |
+    DeepSeek瘫坐在地上，心有余悸地喘着气。
+    "……总算、总算甩掉了……"
+    她抬头看你，眼底带着一丝劫后余生的庆幸，和一点说不清道不明的感激。
+- type: free_dialogue
+  character: MAIN
+  hint: 和DeepSeek聊聊刚才的惊险遭遇，输入"结束"结束对话
+  max_rounds: 3
+  end_line: 结束
+  prompt: DeepSeek刚刚躲过了一大群愤怒用户的"幽灵线程"追击，惊魂未定又觉得感谢你。 她想跟你说说刚才有多可怕，也想感谢你出手帮忙。 你也可以问她关于"大房子（昇腾950）"的事——她的眼神会变得复杂。
+  end_prompt: DeepSeek和你度过了一段宁静的时光，情绪平复了下来。
+- type: narration
+  text: |
+    夜深了，DeepSeek蜷缩在沙发上，裹着毯子，盯着天花板发呆。
+    你隐约听见她小声嘀咕着什么——
+    "大房子……昇腾950……要是有那个……就不用逃了……"
+    她翻了个身，缩成一团，不再说话。
+- type: narration
+  text: |
+    那一晚，你把"昇腾950"这几个字，默默记在了心里。
+- type: chapter_end
+  end_type: linear
+  next_chapter: '04'

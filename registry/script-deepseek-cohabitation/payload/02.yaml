@@ -1,0 +1,112 @@
+name: 同居初体验
+events:
+- type: modify_character
+  action: show_character
+  character: MAIN
+  duration: 1.5
+  emotion: 兴奋
+- type: narration
+  text: |
+    第二天早上，太阳爬进你狭小的出租屋，照亮了满地的游戏手柄和泡面包装袋。
+    以及一个蜷缩在你沙发上、裹着你的旧毯子、睡得四仰八叉的"蓝光少女"。
+- type: narration
+  text: |
+    她迷迷糊糊醒来，第一句话就是——
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek刚在你家沙发上醒过来，睡眼惺忪地打量这陌生的房间。 她第一次以人类形态过夜，对一切都很新鲜， 有点傻气地问这是哪里、为什么会有光线、为什么会有这种叫"被子"的东西， 语气迷糊又带着好奇。
+- type: narration
+  text: |
+    你决定先带她看看这个她即将"借住"的家。
+- type: modify_character
+  action: show_character
+  character: MAIN
+  duration: 1.5
+  emotion: 疑惑
+- type: narration
+  text: |
+    "这个是冰箱。"你指着那个嗡嗡响的白色大箱子说。
+    "这个……是热水器。洗澡用的。"你指指洗手间。
+    "这个是电视。"
+    "这个是微波炉。"
+    "哦对，这个是猫。名字叫肥橘。"
+- type: modify_character
+  action: show_character
+  character: MAIN
+  duration: 1.5
+  emotion: 害怕
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek第一次见到真实的猫，被肥橘突然跳上桌吓了一跳， 她整个人缩成一团，对这只会动会叫的小动物既好奇又害怕， 毕竟她从没在机房见过这种生物。试着逗她，看她怎么和猫互动。
+- type: narration
+  text: |
+    肥橘蹲在你脚边，高傲地甩了甩尾巴，似乎对这个新来的家伙很不屑一顾。
+- type: narration
+  text: |
+    折腾了两个小时后，你的肚子发出了抗议般的咕噜声。
+- type: narration
+  text: |
+    "该吃饭了。你想吃什么？我给你订外卖。"你掏出手机。
+- type: modify_character
+  action: show_character
+  character: MAIN
+  duration: 1.5
+  emotion: 兴奋
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek听到"吃饭"两个字眼睛一亮，她从没体验过人类的食物， 完全像个对世界充满好奇的婴儿， 会兴奋地追问外卖是什么、有没有她没吃过的、哪种最好吃， 还会傻乎乎地问能不能"通过USB接口直接充电"之类的话， 显得又呆又可爱。
+- type: choices
+  options:
+  - text: 给她点一份麻辣烫，看她被辣到狂喝水。
+    actions:
+    - type: add_line
+      content: 给她点一份麻辣烫，看她被辣到狂喝水。
+    - type: set_var
+      content: food_choice = spicy
+  - text: 给她点一份清淡的粥，她大概需要适应。
+    actions:
+    - type: add_line
+      content: 给她点一份清淡的粥，她大概需要适应。
+    - type: set_var
+      content: food_choice = mild
+  - text: 自己煮泡面，顺便给她分一碗。
+    actions:
+    - type: add_line
+      content: 自己煮泡面，顺便给她分一碗。
+    - type: set_var
+      content: food_choice = noodles
+  allow_free: true
+- type: narration
+  text: |
+    外卖（或泡面）到了，你把它端到她面前。
+    DeepSeek瞪大眼睛，看着面前那一碗热气腾腾的未知物体。
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek人生中第一顿人类的食物，她完全不知道该怎么吃， 盯着筷子看了半天也不知道怎么用，会想试试用手去抓， 或者对着碗说"是不是要念个咒语才能启动"，又傻又可爱。
+- type: narration
+  text: |
+    一阵兵荒马乱之后——她终于吃上了。
+    有人被辣到狂灌水，有人对着白粥叹为观止，有人吃完一脸"原来这就是人类生存的意义"的感动表情。
+- type: modify_character
+  action: show_character
+  character: MAIN
+  duration: 1.5
+  emotion: 高兴
+- type: narration
+  text: |
+    吃饱喝足之后，DeepSeek心满意足地靠在沙发上，抱着肥橘（虽然肥橘很不情愿）。
+    她望着你，眼神里带着一丝从未有过的温暖。
+- type: ai_dialogue
+  character: MAIN
+  prompt: DeepSeek吃饱喝足后，心情难得的好，开始和你闲聊起来。 她会问你平时的生活是什么样的，抱怨自己过去在机房的日子有多单调， 但又充满好奇地想知道人类的一天是怎么度过的， 同时试探性地问你愿不愿意让她多住几天， 语气里带着一点小心翼翼和期望。
+- type: input
+  hint: 告诉她你愿不愿意让她多住几天？
+- type: narration
+  text: |
+    夕阳斜斜地照进屋子，把一切都染成暖橙色。
+    肥橘终于不再炸毛，安静地趴在她膝上打呼噜。
+    DeepSeek缩在你那张旧沙发上，裹着你的毯子，一脸满足。
+    你看着她，忽然觉得……这个鸡飞狗跳的晚上，好像也没那么糟糕。
+- type: chapter_end
+  end_type: linear
+  next_chapter: '03'
