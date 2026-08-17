@@ -1,0 +1,13 @@
+id = "status_report"
+name = "状态汇报"
+type = "plugin"
+version = "0.1.0"
+author = "LingChat"
+description = "查询当前角色、场景与时间，一键汇报当前状态"
+
+[[tools]]
+name = "status_report"
+description = "查询当前角色、场景、时间并返回摘要（只读，无副作用）"
+timeout_ms = 5000
+script = "main.py"
+parameters = '{ "type":"object", "properties":{}, "required":[] }'
