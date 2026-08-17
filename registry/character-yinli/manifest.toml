@@ -1,0 +1,10 @@
+id = "yinli"
+name = "音理（邻家的女孩）"
+type = "character"
+version = "0.1.0"
+author = "LingChat 创意工坊"
+description = "真实创意工坊样本（取自上游 Discussions 分享）：《星空列车与白的旅行》的邻家女孩音理，治愈系日常恋爱向角色卡，陪你开启星空列车之旅"
+
+[content]
+category = "角色卡"
+tags = ["恋爱", "日常", "galgame", "治愈"]
