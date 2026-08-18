@@ -1,0 +1,10 @@
+id = "gemini"
+name = "Gemini角色娘"
+type = "character"
+version = "0.1.0"
+author = "soshuinianhua421"
+description = "Google Gemini 的拟人化猫娘角色卡（来自上游 Discussions #634 分享）：蓝色星星裙的猫娘 AI，每句话都会带喵，自带 23 张表情立绘。立绘来源：B站 ZipZipPipe"
+
+[content]
+category = "角色卡"
+tags = ["猫娘", "AI娘", "日常", "恋爱"]
