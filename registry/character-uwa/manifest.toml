@@ -1,0 +1,10 @@
+id = "uwa010"               # 唯一标识，不得与其他内容重复，只允许：字母、数字、下划线、连字符
+name = "uwa"               # 显示名称
+type = "character"                # character / plugin / script
+version = "0.1.0"              # semver，每次上架必须递增
+author = "uwa.uwa"
+description = "一个非正常人"
+
+[content]
+category = "角色卡"             # 分类名，客户端按分类筛选
+tags = ["恋爱", "男娘", "日常"]  # 标签，用于搜索和展示
