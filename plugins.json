@@ -10,7 +10,7 @@
       "description": "查询当前角色、场景与时间，一键汇报当前状态",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/plugin-status-report-0.1.0/plugin-status-report-0.1.0.zip",
       "sha256": "2b7bf6652acdf03e44f1f3b3a4508bddbadc81341ef94e31dddb19e5fecbeece",
-      "size": 1001,
+      "size": 1338,
       "manifest": {
         "id": "status_report",
         "name": "状态汇报",
@@ -28,7 +28,7 @@
           }
         ]
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/251b3518469aae9cee113239e58a6a6379ae179a"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "qinling",
@@ -39,7 +39,7 @@
       "description": "可爱的狼娘角色卡，恋爱向互动设定，适合休闲陪伴对话",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-qinling-0.1.0/character-qinling-0.1.0.zip",
       "sha256": "d4b7cb21e4751eb77133a64601b8eaf05b37d84186fc4650d3f64ce6ae0cfa22",
-      "size": 2719,
+      "size": 3054,
       "manifest": {
         "id": "qinling",
         "name": "钦灵（狼娘）",
@@ -56,7 +56,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/a35519e3cfb86a6040a120418eee87a05c265232",
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac",
       "delisted": true
     },
     {
@@ -68,7 +68,7 @@
       "description": "真实创意工坊样本：一只嘴硬心软的占卜师猫娘，刀子嘴豆腐心的小可爱，常与钦灵斗嘴的日常向角色卡",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-fengxue-0.1.0/character-fengxue-0.1.0.zip",
       "sha256": "ce2ab959057f1d0b0e0dabd1cace530921e62e926f09f369b043f0e63f6902a9",
-      "size": 9573318,
+      "size": 9573654,
       "manifest": {
         "id": "fengxue",
         "name": "风雪（占卜师猫娘）",
@@ -86,7 +86,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/6795f7078072ba378d5bc6f69b3ce6187c57bddb",
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac",
       "delisted": true
     },
     {
@@ -98,7 +98,7 @@
       "description": "真实创意工坊样本（取自上游 Discussions 分享）：《星空列车与白的旅行》的邻家女孩音理，治愈系日常恋爱向角色卡，陪你开启星空列车之旅",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-yinli-0.1.0/character-yinli-0.1.0.zip",
       "sha256": "ac2b79d801b21879cc9a50d641e42c7acd0a19cbd6914ec8de251b681bc89703",
-      "size": 13921862,
+      "size": 13922196,
       "manifest": {
         "id": "yinli",
         "name": "音理（邻家的女孩）",
@@ -116,7 +116,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/d513c6d7e433ca306a62ac5d556233ba8b501d66"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "deepseek-cohabitation",
@@ -127,7 +127,7 @@
       "description": "真实创意工坊样本（取自上游 Discussions #612）：AI 少女 DeepSeek 因涨价风波穿越屏幕闯入玩家家中的搞笑日常剧情包，原生剧本格式（story_config + 5 章节）",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/script-deepseek-cohabitation-0.1.0/script-deepseek-cohabitation-0.1.0.zip",
       "sha256": "f48f821d7a5fd311df3d7a5d9582656298d1983eb0c45409e130703119711023",
-      "size": 14294,
+      "size": 14638,
       "manifest": {
         "id": "deepseek-cohabitation",
         "name": "DeepSeek同居物语",
@@ -145,7 +145,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/45731b8bbd53f26fafcdb8c946ba2c903e727285"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "gemini",
@@ -156,7 +156,7 @@
       "description": "Google Gemini 的拟人化猫娘角色卡（来自上游 Discussions #634 分享）：蓝色星星裙的猫娘 AI，每句话都会带喵，自带 23 张表情立绘。立绘来源：B站 ZipZipPipe",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-gemini-0.1.1/character-gemini-0.1.1.zip",
       "sha256": "7dd2f1df754fb8a0a69d0b35ba4a7b8b6aff1f529624e3deaeaf43c586d585b0",
-      "size": 15904374,
+      "size": 15904419,
       "manifest": {
         "id": "gemini",
         "name": "Gemini角色娘",
@@ -174,7 +174,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/77a557acd9192c24d9a966cb45fc1c6b29500164"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "yukari",
@@ -185,7 +185,7 @@
       "description": "《碧蓝档案》千年科学学园研讨会会计——早濑优香。认真负责又容易害羞的数学鬼才，对 Sensei 怀着深厚感情的少女。含 20 张表情立绘。来自上游 Discussions #199 分享（原作者：Alex1739；感谢文本、总督的协助）。",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-yukari-0.1.0/character-yukari-0.1.0.zip",
       "sha256": "53d779712444b8b1abd66cbb7944027c445224772ae98fced900db31c07b5bf3",
-      "size": 12017010,
+      "size": 12017345,
       "manifest": {
         "id": "yukari",
         "name": "早濑优香（碧蓝档案）",
@@ -203,7 +203,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/488c3d9a451ef450ca68d9fce575db6f0ca1add4"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "yukari-sleepwear",
@@ -214,7 +214,7 @@
       "description": "《碧蓝档案》早濑优香的活动睡衣版角色卡，含 21 张表情立绘（含'安心'表情）。来自上游 Discussions #199 分享（原作者：Alex1739；感谢文本、总督的协助）。",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-yukari-sleepwear-0.1.0/character-yukari-sleepwear-0.1.0.zip",
       "sha256": "22c3dc7924962a41d440f412ae6187b5f884524674c94db046e75d0ef3ba2ac5",
-      "size": 15758292,
+      "size": 15758638,
       "manifest": {
         "id": "yukari-sleepwear",
         "name": "早濑优香（睡衣版）",
@@ -232,7 +232,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/488c3d9a451ef450ca68d9fce575db6f0ca1add4"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "seya",
@@ -243,7 +243,7 @@
       "description": "《碧蓝档案》圣三一综合学园「茶会」领袖——百合园圣娅，表面疏离实则重视同伴的金发狐娘。含 20 张立绘。来自上游 Discussions #157 分享。",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-seya-0.1.0/character-seya-0.1.0.zip",
       "sha256": "042c7d2a46596f3e1cf7f18f1e47c183dff96538272ca48f03e7a841f12b38f4",
-      "size": 29800072,
+      "size": 29800406,
       "manifest": {
         "id": "seya",
         "name": "百合园圣娅（碧蓝档案）",
@@ -262,7 +262,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/3fd8281961dba4343066805158d8c7c0e01fb1b1"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "xin-nai",
@@ -273,7 +273,7 @@
       "description": "《碧蓝档案》千年科学学园的心奈教官，成熟的淑女。含常服 + 泳装两套服装，共 40 张立绘（含触摸区域配置）。来自上游 Discussions #611 分享。",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-xin-nai-0.1.0/character-xin-nai-0.1.0.zip",
       "sha256": "587cf7f5c9497c4e986c0f837eb8f229d0b4309e01b9554aa39053d104f2fc0e",
-      "size": 12925657,
+      "size": 12925994,
       "manifest": {
         "id": "xin-nai",
         "name": "心奈（碧蓝档案）",
@@ -292,7 +292,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/3fd8281961dba4343066805158d8c7c0e01fb1b1"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "amiya",
@@ -303,7 +303,7 @@
       "description": "《明日方舟》阿米娅，罗德岛的领导者",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-amiya-0.1.0/character-amiya-0.1.0.zip",
       "sha256": "18616d53ee56ca828fecde12b35c7c3aff3805e9063043623b0de9a7af2e7d7c",
-      "size": 4128291,
+      "size": 4128336,
       "manifest": {
         "id": "amiya",
         "name": "阿米娅",
@@ -319,7 +319,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/f1bb53889303dddba5596b617e15a868822c09f7"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "nukitashi",
@@ -330,7 +330,7 @@
       "description": "《住在拔作岛上的贫乳该如何是要才好？》琴寄文乃",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-nukitashi-0.1.0/character-nukitashi-0.1.0.zip",
       "sha256": "19c4bc55eb25ec9c56fc9e4436800a103d2d70960736c2ecdea82e3eb79a2921",
-      "size": 7660918,
+      "size": 7660961,
       "manifest": {
         "id": "nukitashi",
         "name": "琴寄文乃",
@@ -346,7 +346,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/f1bb53889303dddba5596b617e15a868822c09f7"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "demule",
@@ -357,7 +357,7 @@
       "description": "《三角洲行动》哈夫克集团全球安全总监阿娜伊斯·德穆兰",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-demule-0.1.0/character-demule-0.1.0.zip",
       "sha256": "55e0a7d272e92dfd9d93bafe2f403be7417367dc1978fd3e64362fd8d29a9584",
-      "size": 8226815,
+      "size": 8226858,
       "manifest": {
         "id": "demule",
         "name": "阿娜伊斯·德穆兰",
@@ -373,7 +373,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/f1bb53889303dddba5596b617e15a868822c09f7"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "hina",
@@ -384,7 +384,7 @@
       "description": "《碧蓝档案》格黑娜风纪委员会长空崎日奈",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-hina-0.1.0/character-hina-0.1.0.zip",
       "sha256": "62a269313a812f508a8bfc369e877985120a63ad022621ea20474493344193b0",
-      "size": 69311956,
+      "size": 69312002,
       "manifest": {
         "id": "hina",
         "name": "空崎日奈",
@@ -400,7 +400,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/f1bb53889303dddba5596b617e15a868822c09f7"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "mika",
@@ -411,7 +411,7 @@
       "description": "《碧蓝档案》圣三一茶话会圣园未花",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-mika-0.1.0/character-mika-0.1.0.zip",
       "sha256": "73a65b0370f8b78c8273a911aff328d2b234e684891a6e709c9b810cf5b2a907",
-      "size": 165402712,
+      "size": 165402757,
       "manifest": {
         "id": "mika",
         "name": "圣园未花",
@@ -427,7 +427,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/f1bb53889303dddba5596b617e15a868822c09f7"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "toripoka",
@@ -438,7 +438,7 @@
       "description": "《犹格索托斯的庭院》见习死神特莉波卡",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-toripoka-0.1.0/character-toripoka-0.1.0.zip",
       "sha256": "f1ff79825e1ad6b902a59bde1ce52f693ed6bdbfdf543b9c779e576b5b5e24ec",
-      "size": 13883459,
+      "size": 13883503,
       "manifest": {
         "id": "toripoka",
         "name": "特莉波卡",
@@ -454,7 +454,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/f1bb53889303dddba5596b617e15a868822c09f7"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     },
     {
       "id": "taoji",
@@ -465,7 +465,7 @@
       "description": "《碧蓝档案》千禧年游戏开发社团才羽桃井（更加聪明的桃井 #155）",
       "download_url": "https://github.com/zhangzm0/lingchat-marketplace/releases/download/character-taoji-0.1.0/character-taoji-0.1.0.zip",
       "sha256": "c5e6efed64ae973e6a9ed0f54a02e3bfb69ba671b73c643584198750ca33f1e8",
-      "size": 39851476,
+      "size": 39851521,
       "manifest": {
         "id": "taoji",
         "name": "才羽桃井",
@@ -481,7 +481,7 @@
           ]
         }
       },
-      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/f1bb53889303dddba5596b617e15a868822c09f7"
+      "review_report_url": "https://github.com/zhangzm0/lingchat-marketplace/commit/25124739d07f3aeb381005449876d2c1c50898ac"
     }
   ]
 }
